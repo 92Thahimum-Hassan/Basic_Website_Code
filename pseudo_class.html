@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::before
+        {
+            content: "Hello ";
+        }
+        h1{
+            color: aqua;
+        }
+        .special-effect:hover
+        {
+            color: bisque;
+            font-size: 30px;
+            background-color: blueviolet;
+        }
+        .special-effect::after
+        {
+            content: " Welcome";
+            color: coral;
+            background-color: crimson;
+        }
+        input :focus
+        {
+            font-weight: 100;
+            font-size: medium;
+            
+        }
+        /* p:nth-child(2n)
+        {
+            background-color: coral;
+        } */
+        a:visited
+        {
+          color: coral;
+        }
+        body{
+         counter-reset: section;
+        }
+        p::before{
+            counter-increment: section;
+            content: "Section " counter(section) ": " ;
+        }
+        p::before
+        {
+            content: " 🥰";
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo class</h1>
+    <h1>Normal class</h1>
+    <h1 class="special-effect">Cool class</h1>
+    <input name ="email" type="text">
+    <br>
+    <input name="text" type="text">
+    
+        <p>Thahimum</p>
+        <p>Hassan</p>
+        <p>Monami</p>
+        <p>Amad</p>
+        <p>Ibn</p>
+        <p>Moinul</p>
+        <p>Kazi</p>
+    
+    <a href="https://github.com/lyraddigital/chat-app-react/tree/master/src/store">Github</a>
+    <a href="https://medium.com/javascript-in-plain-engpsh/may-i-help-you-build-a-chatbot-in-10-minutes-with-react-df19e940bbc8">React</a>
+</body>
+</html>
